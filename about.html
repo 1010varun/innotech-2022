@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About QC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+
+<body style="background-color: rgba(27, 27, 27, 0.856);">
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img src="images/cQ_LOGO-01_1_-removebg-preview.png" class="img_src"></a>
+            <form class="d-flex" role="search">
+                <a class="btn btn-outline-dark mx-2" href="about.html">About us</a>
+                <button class="btn btn-outline-dark mx-2" type="button" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Post a ques.</button>
+                <a class="btn btn-outline-dark mx-2" href="answer.html">Answer a ques.</a>
+                <button class="btn btn-outline-dark mx-2" type="button" onclick="logout()">Logout</button>
+            </form>
+        </div>
+    </nav>
+
+    <div>
+        <img src="images/Qc_LOGO-01-removebg-preview.png" id="main_logo">
+        <p id="tag_line">Which Connects your Query</p>
+    </div>
+
+    <div>
+        <p id="about_heading"><u>About Query Connect</u></p>
+        <p id="about">
+            Welcome to query connect. Query connect is a site in which a KIETs member can Connect with their seniors as
+            well as alumni to ask their queries and doubts in any topic. This site has a very friendly and peer to peer
+            learning atmosphere so that no one can feels hesitant to ask their queries which could influence his/her
+            choice in a positive way. The person answering your questions will be a reliable senior so you dont have to
+            worry about the quality of answer you get. Answers from different domains will be answered at ease.Hope you
+            like your experience here at Query connect
+        </p>
+    </div>
+
+    <div class="container footer">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="dashboard.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li> -->
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2022 Company, Inc</p>
+        </footer>
+    </div>
+
+    <div style="background-color: rgba(27, 27, 27, 0.856);">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Post a Question</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                            style="height:50%;"></button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea placeholder="Type your question....." required id="text_modal"></textarea>
+                        <!-- <input -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                            style="background-color: #ff6600;" on onclick="posted()">Post</button>
+                        <!-- <button type="button" class="btn btn-primary" style="background-color: #ff6600;">Post Question</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
