@@ -12,18 +12,25 @@
     crossorigin="anonymous"></script>
   <link href="style.css" rel="stylesheet">
   <script defer src="script.js"></script>
+  <style>
+    body {
+      background-image: url("images/1556608.jpg");
+      background-size: 100%;
+    }
+  </style>
 </head>
 
-<body style="background-color: rgba(27, 27, 27, 0.856);">
+<body>
   <nav class="navbar">
     <div class="container-fluid">
       <a class="navbar-brand"><img src="images/cQ_LOGO-01_1_-removebg-preview.png" class="img_src"></a>
       <form class="d-flex" role="search">
-        <a class="btn btn-outline-dark mx-2" href="about.html">About us</a>
-        <button class="btn btn-outline-dark mx-2" type="button" data-bs-toggle="modal"
-          data-bs-target="#exampleModal">Post a ques.</button>
-        <a class="btn btn-outline-dark mx-2" href="answer.html">Answer a ques.</a>
-        <button class="btn btn-outline-dark mx-2" type="button" onclick="logout()">Logout</button>
+        <a class="btn" id="nav_btn" href="dashboard.html">Home</a>
+        <a class="btn" id="nav_btn" href="about.html">About us</a>
+        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="nav_btn">Post a
+          ques.</button>
+        <a class="btn" href="answer.html" id="nav_btn">Answer a ques.</a>
+        <button class="btn" type="button" onclick="logout()" id="nav_btn">Logout</button>
       </form>
     </div>
   </nav>
@@ -34,75 +41,80 @@
   </div>
 
   <div>
-    <p
-      style="padding:1%; background-color: #ff6600; width: 18%; margin: 5% 0% 5% 10%; font-weight: 600; color: black; border: 5px double black;">
-      <u>Previously Asked Questions</u>
-    </p>
-  </div>
-  <div>
-    <div class="card" style="margin: 5% 5% 5% 10%;">
-
-      <p style=" margin: 10px 0px 0px 20px"><span class="question">Question: What programming language should I learn
-          first? </span><br><br>Answer : You should first learn C. You need to know how to implement everything
-        manually. I
-        don't prefer using python in the beginning. Python is a great language without any doubt. I myself is
-        programmer of python. But I first started with C and C++.
-      </p>
-    </div>
-    <div class="card" style="margin: 5% 5% 5% 10%;">
-
-      <p style=" margin: 10px 0px 0px 20px"><span class="question">Question: Why we should learn to program first in C
-          language?</span><br><br>Answer : It's not necessary to learn c before any other languages. You can start with
-        Python also.
-        But everyone recommends to start your programming journey with c language because it is most basic language and
-        it's fundamentals are also very useful while studying other languages. So to be frank don't start with c
-        language,
-        just start with Python.
-      </p>
-    </div>
-
-
     <div>
       <p
-        style="padding:1%; background-color: #ff6600; width: 20%; margin: 5% 0% 5% 10%; font-weight: 600; color: black; border: 5px double black;">
-        <u>Other Questions</u>
+        style="padding:1%; background-color: #1a75ff; width: 20%; margin: 5% 0% 0% 16%; font-weight: 600; color: white; border: 5px solid #1a75ff; border-radius: 10px;">
+        Previously Asked Questions
       </p>
     </div>
+    <div>
+      <div class="card" style="margin: 1% 5% 0% 16%; width: 68%;">
 
-    <div class="card" style="margin: 5% 5% 5% 10%;">
+        <p style=" margin: 0% 0% 0% "><span class="question">Question: What programming language should I learn
+            first? </span><br><br>Answer : You should first learn C. You need to know how to implement everything
+          manually. I
+          don't prefer using python in the beginning. Python is a great language without any doubt. I myself is
+          programmer of python. But I first started with C and C++.
+        </p>
+      </div>
+      <div class="card" style="margin: 2% 5% 0% 16%; width: 68%;">
 
-      <p style=" margin: 10px 0px 0px 20px"><span class="question">Question: What should I do to start web developing
-        and what courses should I take? </span><br><br>Answer : As a beginner, there are many online platforms that provide
-        basic concepts about web development. EduBenchers is a very useful online platform that I came across
-        recently. They provide many courses that may help you.
+        <p><span class="question">Question: Why we should learn to program first in C
+            language?</span><br><br>Answer : It's not necessary to learn c before any other languages. You can start
+          with
+          Python also.
+          But everyone recommends to start your programming journey with c language because it is most basic language
+          and
+          it's fundamentals are also very useful while studying other languages. So to be frank don't start with c
+          language,
+          just start with Python.
+        </p>
+      </div>
+
+
+      <p
+        style="padding:1%; background-color: #1a75ff; width: 20%; margin: 2% 0% 0% 16%; font-weight: 600; color: white; border: 5px solid #1a75ff; border-radius: 10px;">
+        Other Questions
       </p>
-    </div>
 
-    <div class="card" style="margin: 5% 5% 5% 10%;">
+      <div class="card" style="margin: 1% 5% 0% 16%; width: 68%;">
 
-      <p style=" margin: 10px 0px 0px 20px"><span class="question">Question: What is the best way to learn web
-        development from scratch?</span><br><br>Answer :Firstly I don't think that web basic web development is any way
-        related to CS classes as initially we learn HTML and CSS which is just the basic structure and designing
-        part. After this when you learn JavaScript then it needs a lot of practice as it's quite complicated and for
-        that you need to learn about classes and objects which you can only learn better with practice.Yeah backend
-        needs some theoretical knowledge like DBMS but that's not a big issue either.
-      </p>
-    </div>
+        <p><span class="question">Question: What should I do to start web developing
+            and what courses should I take? </span><br><br>Answer : As a beginner, there are many online platforms that
+          provide
+          basic concepts about web development. EduBenchers is a very useful online platform that I came across
+          recently. They provide many courses that may help you.
+        </p>
+      </div>
 
-    <div class="card" style="margin: 5% 5% 5% 10%;">
+      <div class="card" style="margin: 2% 5% 0% 16%; width: 68%;">
 
-      <p style=" margin: 10px 0px 0px 20px"><span class="question">Question: What is best way to learn android app
-        development and where?</span><br><br>Answer : I suggest to start with an idea. You don't need a training for that.
-        Elaborate your idea with a pen. Design with that pen the UI. Of course u can use any software instead of the
-        old school pen.
+        <p><span class="question">Question: What is the best way to learn web
+            development from scratch?</span><br><br>Answer :Firstly I don't think that web basic web development is any
+          way
+          related to CS classes as initially we learn HTML and CSS which is just the basic structure and designing
+          part. After this when you learn JavaScript then it needs a lot of practice as it's quite complicated and for
+          that you need to learn about classes and objects which you can only learn better with practice.Yeah backend
+          needs some theoretical knowledge like DBMS but that's not a big issue either.
+        </p>
+      </div>
 
-        Install Android studio. Write or copy paste a single hello world activity. Try to put your idea in code.
-        Google for the parts you need. Don't try to dig in too deeply in other codes at start.
+      <div class="card" style="margin: 2% 5% 0% 16%; width: 68%;">
 
-        Your app will start to shape, with lots of bugs and not optimized code. Don't worry.
+        <p><span class="question">Question: What is best way to learn android app
+            development and where?</span><br><br>Answer : I suggest to start with an idea. You don't need a training for
+          that.
+          Elaborate your idea with a pen. Design with that pen the UI. Of course u can use any software instead of the
+          old school pen.
 
-        At one stage you will feel a lot more confident. It's the time to dig in deeper in the rabbit hole
-      </p>
+          Install Android studio. Write or copy paste a single hello world activity. Try to put your idea in code.
+          Google for the parts you need. Don't try to dig in too deeply in other codes at start.
+
+          Your app will start to shape, with lots of bugs and not optimized code. Don't worry.
+
+          At one stage you will feel a lot more confident. It's the time to dig in deeper in the rabbit hole
+        </p>
+      </div>
     </div>
   </div>
 
@@ -133,7 +145,8 @@
             <!-- <input -->
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="background-color: #ff6600;" on onclick="posted()">Post</button>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="background-color: #1a75ff;" on
+              onclick="posted()">Post</button>
             <!-- <button type="button" class="btn btn-primary" style="background-color: #ff6600;">Post Question</button> -->
           </div>
         </div>

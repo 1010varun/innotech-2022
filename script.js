@@ -45,3 +45,8 @@ function logout(){
     location.href = "index.html";
     alert("Logout Succesfully");
 }
+
+function answer(){
+    alert("Your answer has been sucessfully submited, will update soon");
+    location.reload();
+}
