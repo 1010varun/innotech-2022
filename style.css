@@ -282,3 +282,9 @@ html {
     color: rgb(0, 0, 0);
     margin: 5% 0% 10% 19%;
 }
+
+#post_ques_btn:hover{
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
