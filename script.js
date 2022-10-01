@@ -12,23 +12,23 @@ function submit() {
 
     switch (user) {
         case user1:
-            location.href = "dashboard.html";
+            location.href = "./dashboard.html";
             break;
 
         case user2:
-            location.href = "dashboard.html";
+            location.href = "./dashboard.html";
             break;
 
         case user3:
-            location.href = "dashboard.html";
+            location.href = "./dashboard.html";
             break;
 
         case user4:
-            location.href = "dashboard.html";
+            location.href = "./dashboard.html";
             break;
 
         case user5:
-            location.href = "dashboard.html";
+            location.href = "./dashboard.html";
             break;
 
         default:
@@ -42,7 +42,7 @@ function posted() {
 }
 
 function logout(){
-    location.href = "index.html";
+    location.href = "./index.html";
     alert("Logout Succesfully");
 }
 
